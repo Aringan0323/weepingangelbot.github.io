@@ -17,7 +17,7 @@ In the simulation, we have a Turtlebot3 Waffle robot with a camera on the font o
 
 The main algorithm for box segmentation of the Gazebo human model's body and face is implemented with a FasterRCNN from pytorch. For this application the model was fine tuned on just 2 categories: people and faces.
 
-Fine tuning is a practiced used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
+Fine tuning is a practice used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
 
 ![alt text](fine_tuning.png "Fine Tuning")
 
