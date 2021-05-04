@@ -22,6 +22,8 @@ The model
 * The person and face detection in this program is performed by a [FasterRCNN](https://arxiv.org/pdf/1506.01497.pdf) with a [ResNet-50](https://arxiv.org/pdf/1512.03385.pdf) as the backbone convolutional network. The model itself is loaded from the pytorch module for the [FasterRCNN](https://pytorch.org/vision/stable/models.html#faster-r-cnn).
 * The FasterRCNN is pretrained on the [COCO](https://cocodataset.org/#home) dataset, which contains thousands of images of objects from 80 different categories. Each object of a category in each image is annotated with a segmentation mask and a bounding box, as well as the category that it fits into. 
 * The FasterRCNN was fine-tuned on the [faces4coco](https://github.com/ACI-Institute/faces4coco) dataset, which annotates all of the COCO images with bounding boxes of only people and faces.
+* A detailed tutorial for how to fine tune a pytorch model can be found [here](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html) on pytorch's website.
+* The code for fine tuning the model for this dataset can be found [here](https://github.com/Aringan0323/faces4coco_detection/tree/main/src). You will need to have all necessary dependencies.
 * The FasterRCNN was trained on the validation set of the faces4coco dataset over 10 epochs.
 * System Specs
   - AMD Ryzen9 3950x
