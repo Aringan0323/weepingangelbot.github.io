@@ -39,6 +39,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-<iframe src="https://drive.google.com/file/d/1AMJsoFjG67R7mWGi57o4S_TQ9VjPxJQ5/preview" width="960" height="540" frameBoarder="0" allowFullScreen></iframe>
+<iframe src="https://drive.google.com/file/d/1AMJsoFjG67R7mWGi57o4S_TQ9VjPxJQ5/previewVQ=HD1080" width="960" height="540" frameBoarder="0" allowFullScreen></iframe>
 
 <button name="button" onclick="http://www.google.com">Click me</button>
