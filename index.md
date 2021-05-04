@@ -1,42 +1,20 @@
 
 
 
-## Welcome to GitHub Pages
+## Introduction:
 
-You can use the [editor on GitHub](https://github.com/Aringan0323/weepingangelbot.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The Weeping Angels are a fictional monster originating from the popular British TV show, Dr Who, where these terrifying status monsters are a staple enemy. Our group’s goal was to recreate these monsters with robots using ROS. So how do Weeping Angels work? Weeping Angels in Dr Who are extremely fast beings that chase after people, but they can only move if no one is looking at them. Our robot is designed to do the same thing, follow a person and stop when they look at the robot. To achieve this end, we used person and facial recognition to track humans with a camera, and identify when someone is looking at the robot.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Relevant Literature:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Pytorch
+- OpenCV
 
-```markdown
-Syntax highlighted code block
+## Robot Description and Function:
 
-# Header 1
-## Header 2
-### Header 3
+The robot is the default configuration of a TurtleBot3 Waffle bot, it is a small flat robot consisting of 2 wheels to control the robot, on its top it contains both a LIDAR and RGB camera. The main functionality of this bot will be to recognize people and their faces, and then follow the person. If the robot detects that the person is facing the robot, the robot will come to a stop, and remain stopped till the person has turned away. While following the person, the robot should be able to avoid obstacles in its path and try to maintain visual contact with the person.
+Due to limitations with tracking reliability and image processing runtime, the robot will maintain a set speed of 0.2 m/s when it is moving.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Aringan0323/weepingangelbot.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
 <iframe src="https://drive.google.com/file/d/1AMJsoFjG67R7mWGi57o4S_TQ9VjPxJQ5/preview" width="640" height="480" frameBoarder="0" allowFullScreen></iframe>
