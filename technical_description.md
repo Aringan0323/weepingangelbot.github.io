@@ -9,11 +9,17 @@ The robot is the default configuration of a TurtleBot3 Waffle bot, it is a small
 
 # Person/Facial Recognition
 
+In the simulation, we have a Turtlebot3 Waffle robot with a camera on the font of it, and a fully mobile and animated humanoid model. The human model walks in a predifined path, while the robot follows it around the room. A ROS node subscribes to the image topic produced by the robot's camera, and processes it using a convolutional neural network to detect the position of faces and people in the image. If the processing node detects a person, but not a face in the robot's camera image it will publish cmd_vel topics to the robot that tell it to follow the person. If the node detects a face in the camera image, it will publish cmd_vel commands telling the robot to stop in place. If the robot detects no people or faces in the camera image, it will publish commands that tell the robot to wander around the map as if to search for new victims. 
+
+## Model Description
+
+The model 
+
 # Model Training and Deployment
 
 ## Training
 
-* The person and face detection in this program is performed by a [FasterRCNN](https://arxiv.org/pdf/1506.01497.pdf) with a [ResNet-50](https://arxiv.org/pdf/1512.03385.pdf) as the backbone convolutional network.
+* The person and face detection in this program is performed by a [FasterRCNN](https://arxiv.org/pdf/1506.01497.pdf) with a [ResNet-50](https://arxiv.org/pdf/1512.03385.pdf) as the backbone convolutional network. The model itself is loaded from the pytorch module for the [FasterRCNN](https://pytorch.org/vision/stable/models.html#faster-r-cnn).
 * The FasterRCNN is pretrained on the [COCO](https://cocodataset.org/#home) dataset, which contains thousands of images of objects from 80 different categories. Each object of a category in each image is annotated with a segmentation mask and a bounding box, as well as the category that it fits into. 
 * The FasterRCNN was fine-tuned on the [faces4coco](https://github.com/ACI-Institute/faces4coco) dataset, which annotates all of the COCO images with bounding boxes of only people and faces.
 * The FasterRCNN was trained on the validation set of the faces4coco dataset over 10 epochs.
