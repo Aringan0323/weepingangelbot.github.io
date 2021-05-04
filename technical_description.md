@@ -13,18 +13,17 @@ In the simulation, we have a Turtlebot3 Waffle robot with a camera on the font o
 
 ## Model Description
 
-<img src="/fasterrcnn.PNG" alt="FasterRCNN Model Architecture" class="inline"/>
+<img alt="Object Detection for Dummies Part 3: R-CNN Family" class="n3VNCb" src="https://lilianweng.github.io/lil-log/assets/images/faster-RCNN.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 214.535px; margin: 202.633px 0px;">
 
 The main algorithm for box segmentation of the Gazebo human model's body and face is implemented with a FasterRCNN from pytorch. For this application the model was fine tuned on just 2 categories: people and faces.
 
 Fine tuning is a practice used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
 
 <img alt="Fine-tuning with Keras and Deep Learning - PyImageSearch" class="n3VNCb" src="https://pyimagesearch.com/wp-content/uploads/2019/06/fine_tuning_keras_network_surgery.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 382.5px; margin: 118.65px 0px;">
-<img src="/fine_tuning.png" alt="Fine Tuning" class="inline"/>
 
 This works because of the way that neural networks process images. In a neural network, the early layers create representations for simple patterns in the image, such as curves and edges. In the later layers the model starts to be able to recognize higher level points of interest in the image, such as features of the objects that it has been trained to classify and recognize.
 
-<img src="/feature_representation.jpg" alt="Model Feature Representations" class="inline"/>
+<img alt="Hierarchical representation learning by a Convolutional Neural Network... |  Download Scientific Diagram" class="n3VNCb" src="https://www.researchgate.net/profile/Shoaib-Siddiqui-4/publication/317558591/figure/fig4/AS:511878728253445@1499052807279/Hierarchical-representation-learning-by-a-Convolutional-Neural-Network-where-the-initial.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 216px; margin: 201.9px 0px;">
 
 With the pretrained Residual Convolutional Network which is the backbone of the FasterRCNN, it is assumed that the model can already recognize faces because it has been trained to recognize people, and the face of a person may be a key factor in determining if there is a person in the section of the image. However, the model has not been trained to specifically recognize faces despite the fact that it likely already recognizes them as a unique feature of a person.
 
