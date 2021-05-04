@@ -1,3 +1,9 @@
+---
+driveId: 1AMJsoFjG67R7mWGi57o4S_TQ9VjPxJQ5/preview
+---
+
+{% include googleDrivePlayer.html id=page.driveId %}
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Aringan0323/weepingangelbot.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
