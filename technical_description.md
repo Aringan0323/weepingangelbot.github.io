@@ -1,5 +1,6 @@
 ---
 title: Technical Overview
+description: In depth explanation of the technology in the Weeping Angel Bot program
 layout: default
 ---
 
