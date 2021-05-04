@@ -13,17 +13,17 @@ In the simulation, we have a Turtlebot3 Waffle robot with a camera on the font o
 
 ## Model Description
 
-![alt text](fasterrcnn.PNG "FasterRCNN Model Architecture")
+<img src="/fasterrcnn.PNG" alt="FasterRCNN Model Architecture" class="inline"/>
 
 The main algorithm for box segmentation of the Gazebo human model's body and face is implemented with a FasterRCNN from pytorch. For this application the model was fine tuned on just 2 categories: people and faces.
 
 Fine tuning is a practice used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
 
-![alt text](fine_tuning.png "Fine Tuning")
+<img src="/fine_tuning.png" alt="Fine Tuning" class="inline"/>
 
 This works because of the way that neural networks process images. In a neural network, the early layers create representations for simple patterns in the image, such as curves and edges. In the later layers the model starts to be able to recognize higher level points of interest in the image, such as features of the objects that it has been trained to classify and recognize.
 
-![alt text](feature_representation.jpg "Model Feature Representations")
+<img src="/feature_representation.jpg" alt="Model Feature Representations" class="inline"/>
 
 With the pretrained Residual Convolutional Network which is the backbone of the FasterRCNN, it is assumed that the model can already recognize faces because it has been trained to recognize people, and the face of a person may be a key factor in determining if there is a person in the section of the image. However, the model has not been trained to specifically recognize faces despite the fact that it likely already recognizes them as a unique feature of a person.
 
