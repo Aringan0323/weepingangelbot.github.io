@@ -19,6 +19,7 @@ The main algorithm for box segmentation of the Gazebo human model's body and fac
 
 Fine tuning is a practice used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
 
+<img alt="Fine-tuning with Keras and Deep Learning - PyImageSearch" class="n3VNCb" src="https://pyimagesearch.com/wp-content/uploads/2019/06/fine_tuning_keras_network_surgery.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 382.5px; margin: 118.65px 0px;">
 <img src="/fine_tuning.png" alt="Fine Tuning" class="inline"/>
 
 This works because of the way that neural networks process images. In a neural network, the early layers create representations for simple patterns in the image, such as curves and edges. In the later layers the model starts to be able to recognize higher level points of interest in the image, such as features of the objects that it has been trained to classify and recognize.
