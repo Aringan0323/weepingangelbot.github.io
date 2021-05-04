@@ -13,13 +13,13 @@ In the simulation, we have a Turtlebot3 Waffle robot with a camera on the font o
 
 ## Model Description
 
-<img alt="Object Detection for Dummies Part 3: R-CNN Family" class="n3VNCb" src="https://lilianweng.github.io/lil-log/assets/images/faster-RCNN.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 214.535px; margin: 202.633px 0px;">
+<img alt="Object Detection for Dummies Part 3: R-CNN Family" class="n3VNCb" src="https://lilianweng.github.io/lil-log/assets/images/faster-RCNN.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 214.535px;">
 
 The main algorithm for box segmentation of the Gazebo human model's body and face is implemented with a FasterRCNN from pytorch. For this application the model was fine tuned on just 2 categories: people and faces.
 
 Fine tuning is a practice used in transfer learning, where models that are pretrained for general tasks are allowed to keep their low level layers, and their later layers are trained on a specific dataset.
 
-<img alt="Fine-tuning with Keras and Deep Learning - PyImageSearch" class="n3VNCb" src="https://pyimagesearch.com/wp-content/uploads/2019/06/fine_tuning_keras_network_surgery.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 382.5px; margin: 118.65px 0px;">
+<img alt="Fine-tuning with Keras and Deep Learning - PyImageSearch" class="n3VNCb" src="https://pyimagesearch.com/wp-content/uploads/2019/06/fine_tuning_keras_network_surgery.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 382.5px;">
 
 This works because of the way that neural networks process images. In a neural network, the early layers create representations for simple patterns in the image, such as curves and edges. In the later layers the model starts to be able to recognize higher level points of interest in the image, such as features of the objects that it has been trained to classify and recognize.
 
