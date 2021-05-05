@@ -6,7 +6,7 @@ layout: default
 
 # Weeping Angel Bot in Gazebo
 
-<iframe width="1019" height="573" src="https://www.youtube.com/embed/Z1IEW1stXUovq=HD1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1019" height="573" src="https://www.youtube.com/embed/Z1IEW1stXUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Contributers:
